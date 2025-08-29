@@ -55,4 +55,31 @@ command.
  * `cdk diff`        compare deployed stack with current state
  * `cdk docs`        open CDK documentation
 
+Configure Environment
+
+# Configure AWS credentials
+$ aws configure
+
+# Bootstrap CDK (first time only)
+$ cdk bootstrap
+
+
+# Synthesize CloudFormation template
+cdk synth
+
+# Deploy all components
+cdk deploy --all
+
+
+# Create a folder in the Bucket S3 with the name 'uploads'
+# Upload documents to the processing folder
+
+Deploy Frontend
+
+# Install Streamlit dependencies
+pip install streamlit requests
+
+# Run the web interface
+streamlit run app-chat-whit-agent.py
+
 Enjoy!
